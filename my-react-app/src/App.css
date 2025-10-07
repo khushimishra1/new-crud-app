@@ -1,0 +1,109 @@
+body {
+  background-color: #17202a;
+}
+
+html {
+  font-size: 62.5%;
+  font-family: "urbanist";
+}
+
+p,
+a,
+li,
+input {
+  font-size: 1.6rem;
+  letter-spacing: 0.12rem;
+  line-height: 1.5;
+  color: #fff;
+}
+
+button {
+  padding: 0.8rem 3.2rem;
+  border-radius: 0.5rem; /* slightly smoother corners */
+  border: none;
+  cursor: pointer;
+  background: linear-gradient(135deg, #6bd56d, #3fa34d); /* gradient for a modern look */
+  color: #fff;
+  font-weight: 600;
+  letter-spacing: 1.5px; /* corrected from 1.5rem */
+  font-size: 16px;
+  text-transform: uppercase;
+  transition: all 0.3s ease;
+  margin-left: 1.2rem;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.25); /* soft shadow */
+}
+
+/* Hover effect */
+button:hover {
+  transform: translateY(-2px); /* subtle lift effect */
+  background: linear-gradient(135deg, #5ec35e, #359f42);
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.35);
+}
+
+/* Active / click effect */
+button:active {
+  transform: translateY(0);
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.2);
+}
+
+
+.main-section {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.section-form {
+  padding: 1.6rem;
+  background-color: #56779e;
+  border-radius: 0.6rem;
+  -webkit-border-radius: 0.6rem;
+  -moz-border-radius: 0.6rem;
+  -ms-border-radius: 0.6rem;
+  -o-border-radius: 0.6rem;
+  margin: 3.2rem auto ;
+ 
+}
+
+form {
+  display: flex;
+  gap: 1.2rem;
+}
+
+& input {
+  width:  24rem;
+  color: #468dde;
+  border: 0.1rem solid grey;
+  outline: none;
+  border-radius: 0.3rem;
+  -webkit-border-radius: 0.3rem;
+  -moz-border-radius: 0.3rem;
+  -ms-border-radius: 0.3rem;
+  -o-border-radius: 0.3rem;
+  padding: 0.8rem 1.2rem;
+  font-size: 1.5rem;
+}
+
+.section-post {
+  width: 90%;
+
+  & ol {
+   display: grid;
+   grid-template-columns: repeat(3, 1fr);
+   gap: 3.2rem;
+  
+  & li {
+    background-color: #091420;
+    padding: 1.2rem;
+    border-radius: 0.8rem;
+    -webkit-border-radius: 0.6rem;
+    -moz-border-radius: 0.6rem;
+    -ms-border-radius: 0.6rem;
+    -o-border-radius: 0.6rem;
+  }
+ 
+}
+}
